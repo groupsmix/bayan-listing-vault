@@ -1,0 +1,59 @@
+@page {
+  size: A4;
+  margin: 22mm 20mm 22mm 20mm;
+  @bottom-center {
+    content: "Bayan — The Listing Vault · p. " counter(page);
+    font-family: Georgia, serif;
+    font-size: 9pt;
+    color: #3D2E1F;
+  }
+  @top-right {
+    content: string(chapter);
+    font-family: Inter, Arial, sans-serif;
+    font-size: 8pt;
+    color: #A06E3D;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+html { font-size: 10.5pt; }
+body {
+  font-family: Inter, Arial, sans-serif;
+  color: #141310;
+  line-height: 1.55;
+  background: #F6F1E7;
+}
+
+h1, h2, h3, h4 { font-family: Georgia, 'Times New Roman', serif; letter-spacing: -0.01em; color: #141310; }
+h1 { font-size: 26pt; margin-top: 1.4em; border-bottom: 2px solid #3D2E1F; padding-bottom: 0.3em; string-set: chapter content(); }
+h2 { font-size: 17pt; margin-top: 1.3em; color: #3D2E1F; }
+h3 { font-size: 13pt; margin-top: 1.1em; color: #A06E3D; }
+
+p, li { color: #141310; }
+code, pre { font-family: ui-monospace, Menlo, monospace; font-size: 0.9em; background: #FBF9F3; padding: 1px 4px; border-radius: 3px; color: #3D2E1F; }
+pre { padding: 10px; line-height: 1.45; overflow-x: auto; border-left: 3px solid #A06E3D; }
+blockquote { border-left: 3px solid #A06E3D; padding-left: 12px; margin-left: 0; color: #3D2E1F; font-style: normal; background: rgba(160,110,61,0.05); padding: 10px 14px; }
+
+table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 9.5pt; }
+th, td { border: 1px solid rgba(20,19,16,0.15); padding: 6px 9px; text-align: left; }
+th { background: #FBF9F3; color: #3D2E1F; font-weight: 600; }
+
+[dir="rtl"], [lang="ar"] {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Noto Naskh Arabic', 'Amiri', 'Noto Sans Arabic', Arial, sans-serif;
+  font-size: 12pt;
+  line-height: 1.85;
+}
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 {
+  font-family: 'Noto Naskh Arabic', 'Amiri', Georgia, serif;
+  text-align: right;
+}
+[dir="rtl"] blockquote { border-left: none; border-right: 3px solid #A06E3D; padding-left: 0; padding-right: 12px; }
+
+#TOC { page-break-after: always; }
+#TOC ul { list-style: none; padding-left: 0; }
+#TOC li { padding: 4px 0; border-bottom: 1px dotted rgba(20,19,16,0.1); }
+
+hr { border: none; border-top: 1px solid rgba(20,19,16,0.15); margin: 1.5em 0; }

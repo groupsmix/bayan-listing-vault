@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <rect width="400" height="120" fill="#F6F1E7"/>
+  <text x="30" y="70" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="56" fill="#141310" letter-spacing="-1.5">Bayan</text>
+  <text x="32" y="100" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="13" fill="#3D2E1F" letter-spacing="2">THE LISTING VAULT</text>
+  <g transform="translate(340, 40)">
+    <rect x="0" y="0" width="40" height="40" fill="none" stroke="#141310" stroke-width="1.5"/>
+    <text x="20" y="30" font-family="'Noto Naskh Arabic', serif" font-size="26" font-weight="700" fill="#141310" text-anchor="middle">ب</text>
+  </g>
+</svg>
