@@ -9,7 +9,7 @@ cd "$(dirname "$0")/.."
 fail=0
 
 # Listing prompts — H3 headings like "### 1. ", "### 2. " etc in content/en/01*-listing-prompts*.md
-listing_count=$(grep -c '^### [0-9]\+\. ' content/en/01-listing-prompts.md content/en/01b-*.md content/en/01c-*.md content/en/01d-*.md content/en/01e-*.md | awk -F: '{s+=$2} END {print s}')
+listing_count=$(grep -c '^### [0-9]\+\. ' content/en/01-listing-prompts.md content/en/01b-*.md content/en/01c-*.md content/en/01d-*.md content/en/01e-*.md 2>/dev/null | awk -F: '{s+=$2} END {print s}' || echo 0)
 echo "Listing prompts (EN): $listing_count (target 100)"
 [ "$listing_count" -ge 100 ] || fail=1
 
