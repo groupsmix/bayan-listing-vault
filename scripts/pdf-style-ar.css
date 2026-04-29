@@ -1,0 +1,110 @@
+/* Bayan — Arabic (RTL) edition CSS
+ * Adapted from layout/style_ar.css. Uses system Noto Naskh / Noto Sans Arabic
+ * so the PDF builds in CI without bundled font files. The @font-face block
+ * (PlexArabic, Tajawal) was removed for the same reason.
+ */
+
+@page {
+  size: A4;
+  margin: 22mm 20mm 24mm 20mm;
+  @top-right {
+    content: "بَيان — قَبْو الإعلانات";
+    font-family: "Noto Naskh Arabic", "Noto Sans Arabic", "Amiri", Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #888;
+  }
+  @top-left {
+    content: string(section-title);
+    font-family: "Noto Naskh Arabic", "Noto Sans Arabic", Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #888;
+  }
+  @bottom-center {
+    content: counter(page) " / " counter(pages);
+    font-family: "Noto Naskh Arabic", "Noto Sans Arabic", Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #888;
+  }
+  @bottom-right {
+    content: "Watermark: see Gumroad receipt";
+    font-family: "Noto Naskh Arabic", "Noto Sans Arabic", Arial, sans-serif;
+    font-size: 7.5pt;
+    color: #c8c8c8;
+  }
+}
+
+@page :first {
+  margin: 0;
+  @top-left { content: ""; }
+  @top-right { content: ""; }
+  @bottom-center { content: ""; }
+  @bottom-right { content: ""; }
+}
+
+html {
+  font-family: "Noto Naskh Arabic", "Noto Sans Arabic", "Amiri", Arial, sans-serif;
+  font-size: 12pt;
+  line-height: 1.85;
+  color: #141310;
+  background: #F6F1E7;
+  direction: rtl;
+}
+body { margin: 0; padding: 0; direction: rtl; }
+
+h1, h2, h3, h4 {
+  font-family: "Noto Naskh Arabic", "Noto Sans Arabic", Georgia, serif;
+  font-weight: 700;
+  color: #141310;
+  line-height: 1.3;
+  text-align: right;
+}
+h1 {
+  font-size: 26pt;
+  margin: 1.4em 0 0.4em 0;
+  border-bottom: 2px solid #3D2E1F;
+  padding-bottom: 0.3em;
+  string-set: section-title content();
+}
+h2 { font-size: 19pt; margin: 1.3em 0 0.5em 0; color: #3D2E1F; }
+h3 { font-size: 13.5pt; margin: 1.1em 0 0.4em 0; color: #A06E3D; }
+h4 { font-size: 11.5pt; margin: 1em 0 0.3em 0; font-weight: 600; }
+
+p { margin: 0 0 0.7em 0; text-align: right; }
+ul, ol { margin: 0 1.2em 0.7em 0; padding: 0; }
+li { margin-bottom: 0.3em; }
+
+code, pre {
+  font-family: "Noto Naskh Arabic", "DejaVu Sans Mono", ui-monospace, monospace;
+  font-size: 10pt;
+  background: #FBF9F3;
+  border-radius: 3px;
+  padding: 1px 4px;
+  color: #3D2E1F;
+}
+pre {
+  padding: 10px;
+  line-height: 1.5;
+  border-right: 3px solid #A06E3D;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  direction: rtl;
+}
+blockquote {
+  border-right: 3px solid #A06E3D;
+  border-left: none;
+  padding: 10px 14px;
+  margin-right: 0;
+  color: #3D2E1F;
+  background: rgba(160, 110, 61, 0.05);
+}
+
+table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 10pt; direction: rtl; }
+th, td { border: 1px solid rgba(20, 19, 16, 0.15); padding: 6px 9px; text-align: right; }
+th { background: #FBF9F3; color: #3D2E1F; font-weight: 600; }
+
+#TOC { page-break-after: always; }
+#TOC ul { list-style: none; padding-right: 0; padding-left: 0; }
+#TOC li { padding: 4px 0; border-bottom: 1px dotted rgba(20, 19, 16, 0.1); }
+#TOC a { color: #3D2E1F; text-decoration: none; }
+
+hr { border: none; border-top: 1px solid rgba(20, 19, 16, 0.15); margin: 1.5em 0; }

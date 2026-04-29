@@ -1,0 +1,117 @@
+/* Bayan — English (LTR) edition CSS
+ * Adapted from layout/style_en.css. Uses system fonts so the PDF builds in CI
+ * without bundled font files. Visual parity with the original is intentional;
+ * the @font-face block was removed so weasyprint never blocks on missing TTFs.
+ */
+
+@page {
+  size: A4;
+  margin: 22mm 20mm 24mm 20mm;
+  @top-left {
+    content: "Bayan — The Listing Vault";
+    font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #888;
+  }
+  @top-right {
+    content: string(section-title);
+    font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #888;
+  }
+  @bottom-center {
+    content: counter(page) " / " counter(pages);
+    font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #888;
+  }
+  @bottom-left {
+    content: "Watermark: see Gumroad receipt";
+    font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+    font-size: 7.5pt;
+    color: #c8c8c8;
+  }
+}
+
+@page :first {
+  margin: 0;
+  @top-left { content: ""; }
+  @top-right { content: ""; }
+  @bottom-center { content: ""; }
+  @bottom-left { content: ""; }
+}
+
+html {
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #F6F1E7;
+}
+body { margin: 0; padding: 0; }
+
+h1, h2, h3, h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  color: #141310;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+h1 {
+  font-size: 26pt;
+  margin: 1.4em 0 0.4em 0;
+  border-bottom: 2px solid #3D2E1F;
+  padding-bottom: 0.3em;
+  string-set: section-title content();
+}
+h2 {
+  font-size: 17pt;
+  margin: 1.3em 0 0.5em 0;
+  color: #3D2E1F;
+}
+h3 {
+  font-size: 13pt;
+  margin: 1.1em 0 0.4em 0;
+  color: #A06E3D;
+}
+h4 { font-size: 11pt; margin: 1em 0 0.3em 0; font-weight: 600; }
+
+p, li { color: #141310; margin: 0 0 0.7em 0; }
+ul, ol { margin: 0 0 0.7em 1.2em; padding: 0; }
+li { margin-bottom: 0.3em; }
+
+code, pre {
+  font-family: ui-monospace, Menlo, "DejaVu Sans Mono", monospace;
+  font-size: 0.9em;
+  background: #FBF9F3;
+  padding: 1px 4px;
+  border-radius: 3px;
+  color: #3D2E1F;
+}
+pre {
+  padding: 10px;
+  line-height: 1.45;
+  overflow-x: auto;
+  border-left: 3px solid #A06E3D;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+blockquote {
+  border-left: 3px solid #A06E3D;
+  padding: 10px 14px;
+  margin-left: 0;
+  color: #3D2E1F;
+  background: rgba(160, 110, 61, 0.05);
+}
+
+table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 9.5pt; }
+th, td { border: 1px solid rgba(20, 19, 16, 0.15); padding: 6px 9px; text-align: left; }
+th { background: #FBF9F3; color: #3D2E1F; font-weight: 600; }
+
+#TOC { page-break-after: always; }
+#TOC ul { list-style: none; padding-left: 0; }
+#TOC li { padding: 4px 0; border-bottom: 1px dotted rgba(20, 19, 16, 0.1); }
+#TOC a { color: #3D2E1F; text-decoration: none; }
+#TOC a::after { content: leader(".") target-counter(attr(href), page); color: #A06E3D; }
+
+hr { border: none; border-top: 1px solid rgba(20, 19, 16, 0.15); margin: 1.5em 0; }

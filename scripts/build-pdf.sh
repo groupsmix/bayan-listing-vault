@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Build the Bayan PDF from English + Arabic markdown sources.
-# Requires: pandoc, weasyprint
+# Build the Bayan PDF set (EN + AR) from Markdown sources.
+# Requires: pandoc, weasyprint. System fonts only — no bundled TTFs needed.
 
 set -euo pipefail
 
@@ -35,52 +35,64 @@ AR_FILES=(
   content/ar/08-back-matter.md
 )
 
-# Concatenate with page breaks between major sections
-{
-  echo "---"
-  echo "title: 'Bayan — The Listing Vault'"
-  echo "subtitle: 'For UAE & Saudi real-estate agents'"
-  echo "author: 'Bayan'"
-  echo "date: '2025'"
-  echo "---"
-  echo ""
-  for f in "${EN_FILES[@]}"; do
-    cat "$f"
-    echo ""
-    echo ""
-    printf '\n<div style="page-break-after: always"></div>\n\n'
-  done
-  echo ""
-  echo "# القسم العربي — Arabic Section"
-  echo ""
-  echo '<div dir="rtl" lang="ar" style="direction:rtl; text-align:right;">'
-  echo ""
-  for f in "${AR_FILES[@]}"; do
-    cat "$f"
-    echo ""
-    echo ""
-    printf '\n<div style="page-break-after: always"></div>\n\n'
-  done
-  echo '</div>'
-} > dist/bayan-full.md
+build_pdf() {
+  local lang="$1"
+  local css="scripts/pdf-style-${lang}.css"
+  local out_md="dist/bayan-${lang}.md"
+  local out_html="dist/bayan-${lang}.html"
+  local out_pdf="dist/bayan-${lang}.pdf"
 
-echo "Combined markdown: dist/bayan-full.md ($(wc -l < dist/bayan-full.md) lines)"
+  shift
+  local files=("$@")
 
-# Build PDF via pandoc -> HTML -> weasyprint
-cp scripts/pdf-style.css dist/pdf-style.css
+  {
+    echo "---"
+    if [ "$lang" = "ar" ]; then
+      echo "title: 'بيان — قبو الإعلانات'"
+      echo "subtitle: 'لوكلاء العقار في الإمارات والسعودية'"
+      echo "lang: ar"
+      echo "dir: rtl"
+    else
+      echo "title: 'Bayan — The Listing Vault'"
+      echo "subtitle: 'For UAE & Saudi real-estate agents'"
+      echo "lang: en"
+    fi
+    echo "author: 'Bayan'"
+    echo "date: '2025'"
+    echo "---"
+    echo ""
+    for f in "${files[@]}"; do
+      cat "$f"
+      echo ""
+      echo ""
+      printf '\n<div style="page-break-after: always"></div>\n\n'
+    done
+  } > "$out_md"
 
-pandoc dist/bayan-full.md \
-  --from markdown \
-  --to html5 \
-  --standalone \
-  --toc --toc-depth=2 \
-  --metadata title="Bayan — The Listing Vault" \
-  --css=pdf-style.css \
-  -o dist/bayan-full.html
+  echo "Combined markdown: $out_md ($(wc -l < "$out_md") lines)"
 
-weasyprint dist/bayan-full.html dist/bayan.pdf 2>&1 | tail -5 || {
-  echo "weasyprint failed; keeping HTML only"
-  exit 0
+  cp "$css" "dist/pdf-style-${lang}.css"
+
+  pandoc "$out_md" \
+    --from markdown \
+    --to html5 \
+    --standalone \
+    --toc --toc-depth=2 \
+    --metadata title="Bayan — The Listing Vault" \
+    --css="pdf-style-${lang}.css" \
+    -o "$out_html"
+
+  weasyprint "$out_html" "$out_pdf" 2>&1 | tail -5 || {
+    echo "weasyprint failed for $lang; HTML kept at $out_html"
+    return 1
+  }
+
+  echo "PDF built: $out_pdf ($(du -h "$out_pdf" | cut -f1))"
 }
 
-echo "PDF built: dist/bayan.pdf ($(du -h dist/bayan.pdf | cut -f1))"
+build_pdf en "${EN_FILES[@]}"
+build_pdf ar "${AR_FILES[@]}"
+
+echo ""
+echo "Outputs:"
+ls -la dist/bayan-en.pdf dist/bayan-ar.pdf 2>/dev/null || true

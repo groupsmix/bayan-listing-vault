@@ -59,7 +59,7 @@ Simple type-only wordmark: `Bayan` in serif bold, letter-spacing `-0.02em`. Stan
 > دليل AI للعقاريين في الإمارات والسعودية. 100 نصّ قوائم. 30 تسلسل متابعة. بصوتك. بلا رائحة ذكاء اصطناعي. bayan-vault.com
 
 **LinkedIn:**
-> Bayan — The Listing Vault. A bilingual playbook for UAE and Saudi real-estate agents tired of their copy sounding like everyone else's. 100 listing prompts, 30 follow-up sequences, 50 captions, 10 market reports, and 15 WhatsApp objection scripts — in your voice. Distributed via Gumroad. 14-day refund. Lifetime free updates.
+> Bayan — The Listing Vault. A bilingual playbook for UAE and Saudi real-estate agents tired of their copy sounding like everyone else's. 100 listing prompts, 30 follow-up sequences, 50 captions, 10 market reports, and 15 WhatsApp objection scripts — in your voice. Distributed via Gumroad. 14-day refund. 12 months of free updates.
 
 **X / Twitter:**
 > AI listing playbook for Gulf agents. Bilingual. No AI smell.

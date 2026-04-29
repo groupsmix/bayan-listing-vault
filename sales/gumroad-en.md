@@ -56,11 +56,7 @@
 
 ## Testimonials
 
-> [TESTIMONIAL_1 — name, brokerage, city. 2–3 sentences about specific result, e.g., "cut my listing-write time from 45 min to 9 min, and my Bayut click-through is up 22% on the first 5 listings I wrote with it."]
-
-> [TESTIMONIAL_2 — name, brokerage, city. 2–3 sentences about follow-up sequence specifically, e.g., "the ghosted-buyer sequence recovered a 4.2M deal I'd written off two months ago."]
-
-> [TESTIMONIAL_3 — name, brokerage, city. 2–3 sentences in Arabic about voice-match specifically.]
+Testimonials added after pilot wave.
 
 ---
 
@@ -71,7 +67,7 @@
 | Buyer onboarding email sequence (5 emails) | AED 150 |
 | Seller onboarding email sequence (5 emails) | AED 150 |
 | Master voice-clone system prompt | AED 300 |
-| Lifetime free updates | AED 200 |
+| 12 months of free updates | AED 200 |
 | **Total bonus value** | **AED 800** |
 
 ---
@@ -107,11 +103,11 @@ A: No. Every prompt with a listing output leaves a marked slot for RERA permit n
 **Q: I work in Qatar / Kuwait / Oman. Will this still work?**
 A: The voice and structure translate fine. The compliance fields (RERA, Trakheesi, REGA) and area examples are specific to UAE and Saudi Arabia. You'd adapt about 20% of the content for a different Gulf market. Worth it, but I'd tell you honestly: the product is built for UAE and Saudi first.
 
-**Q: How do I use the Notion bundle vs. the PDF?**
-A: The PDF is for reading and reference. The Notion bundle is for actual day-to-day copy-paste — every prompt, sequence, and caption is its own Notion block you can clip directly into ChatGPT. Most buyers use both: PDF on the iPad for skim, Notion on the laptop for work.
+**Q: How do I actually use the playbook day-to-day?**
+A: You receive two PDFs in your Gumroad library — one English, one Arabic. The PDFs are structured for copy-paste: every prompt, sequence, and caption is a self-contained block. Open it on iPad or laptop, copy a prompt, paste it into ChatGPT or Claude after the master voice prompt from Appendix A. Most buyers keep the PDF open on a second screen while they work.
 
 **Q: What if updates change everything in 6 months?**
-A: Updates are free, forever. When RERA rules shift, when a new portal replaces Dubizzle, when a major off-plan project changes the Dubai South conversation — the book updates, and every existing buyer gets the new version automatically.
+A: 12 months of free updates from the date of purchase. When RERA rules shift, when a new portal replaces Dubizzle, when a major off-plan project changes the Dubai South conversation — the book updates, and every existing buyer gets the new version automatically through their Gumroad library for the duration of the 12-month window.
 
 ---
 
@@ -123,4 +119,4 @@ Not promising you'll close more deals (though you might). Not promising you'll r
 
 **[ Get Bayan on Gumroad — AED 297 ]**
 
-14-day refund. Lifetime free updates. One-time payment.
+14-day refund. 12 months of free updates. One-time payment.

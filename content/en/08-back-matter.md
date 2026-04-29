@@ -5,14 +5,14 @@
 This playbook is licensed for the **purchaser's individual professional use** — meaning you, the agent, may use everything inside (prompts, sequences, captions, scripts, market reports) for your own work and your own clients without restriction. You may copy-paste any section into ChatGPT, Claude, Gemini, your CRM, your Bayut listings, your Instagram, your email, your WhatsApp.
 
 What you may **not** do without a separate brokerage / team license:
-- Distribute the PDF, Notion bundle, or any substantial extract to other agents in or outside your brokerage
+- Distribute the PDF or any substantial extract to other agents in or outside your brokerage
 - Re-sell, re-package, or re-brand any portion as your own product
 - Upload it to a shared brokerage drive accessible to non-licensees
 - Use any portion in a paid course, paid coaching, or training material you sell or charge for
 
-For brokerage / team licensing covering multiple agents under one purchase, contact `{{contact_email}}`. Pricing is per-seat and includes anti-piracy watermarking customized to the brokerage.
+For brokerage / team licensing covering multiple agents under one purchase, contact `{{licensing_email}}`. Pricing is per-seat and includes a brokerage-customised cover.
 
-Each PDF copy of this playbook is watermarked with a unique buyer ID embedded in the page footers and metadata. Distributing the PDF outside your individual professional use is detectable and triggers an automatic license suspension plus a refund clawback.
+Each PDF copy carries a footer reference (`Watermark: see Gumroad receipt`) and a license-key reference printed on the cover. The license key itself is delivered by Gumroad on the buyer's receipt. The watermark is informational — it identifies the receipt holder for licensing questions; it is not used to police usage. The refund policy below is unconditional within its 14-day window and is not affected by the watermark.
 
 ---
 
@@ -31,9 +31,9 @@ After 14 days, refunds are at our discretion and require a written reason. The r
 
 ## Updates
 
-Bayan ships with **lifetime free updates**. When the playbook is revised — new prompts, new sequences, new market reports, updated compliance fields after RERA / REGA rule changes — every existing buyer receives the new version free, automatically, through their Gumroad library.
+Bayan ships with **12 months of free updates** from the date of purchase. When the playbook is revised — new prompts, new sequences, new market reports, updated compliance fields after RERA / REGA rule changes — every existing buyer receives the new version free, automatically, through their Gumroad library for the duration of that 12-month window.
 
-There is no "Bayan v2" upsell. The product evolves, and you stay current as long as you own it.
+There is no "Bayan v2" upsell during the update window. After the 12 months, your copy stays yours; future major revisions may be offered as a separate paid upgrade.
 
 ---
 
