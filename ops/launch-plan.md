@@ -4,8 +4,8 @@
 
 | Tier | Price | What's included |
 |---|---|---|
-| **Individual agent (default)** | AED 297 / USD 80 | Full PDF + Notion + lifetime updates, 1-seat license |
-| **Team of 3-10 agents** | AED 997 / USD 270 | 10 seats, custom brokerage watermark on PDFs, shared Notion workspace |
+| **Individual agent (default)** | AED 297 / USD 80 | Bilingual PDF (EN + AR) + 12 months of free updates, 1-seat license |
+| **Team of 3-10 agents** | AED 997 / USD 270 | 10 seats, custom brokerage watermark on PDFs |
 | **Brokerage (unlimited seats)** | AED 4,900 / USD 1,330 | Unlimited seats within one ORN, co-branded cover, 1-hour onboarding call |
 
 **Strategy note:** Individual tier is the wedge. Do not push "team" upsell in the Gumroad flow — it kills conversion on single-agent buyers. Team inquiries come through `teams@` after a single agent converts. Goal: 30 single-seat buyers before first team sale.
@@ -19,12 +19,12 @@
 
 Target refund rate: <4% on first 100 sales. Above 6%, audit the PDF for a specific section that's underperforming.
 
-## Anti-piracy
+## Watermarking and licensing (informational only)
 
-- Every PDF carries a **buyer-specific watermark** on every page footer (Gumroad supports this natively via the `license_key` variable).
-- Notion template is shared via "duplicate to your own workspace" — each buyer gets their own copy, not shared access.
-- Buyer-ID watermark is embedded in PDF metadata (Author field) as well as visible footer.
-- If a pirated PDF surfaces, the buyer-ID identifies the leak; that buyer-ID is revoked from the Gumroad update library and team-license sales are refused to that identity.
+- Every PDF carries a footer reference (`Watermark: see Gumroad receipt`) plus the buyer's Gumroad license key on the cover page.
+- The actual per-buyer identity lives on the Gumroad receipt and in the Gumroad license-key system — v1 does not run a server-side stamping pipeline.
+- The watermark is **informational, not policing**. It identifies the receipt holder for licensing questions and brokerage-team rollouts; it is not used to chase or punish pirated copies.
+- This is consistent with the **14-day no-questions-asked refund**: refunds are not tied to watermark or piracy enforcement. Buyers who request a refund inside the window are refunded without follow-up.
 
 ## 14-day launch plan
 

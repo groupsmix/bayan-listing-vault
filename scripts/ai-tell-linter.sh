@@ -61,7 +61,7 @@ QUOTECHARS='["'\''`*]'
 #      unique prefix `delve, embark, tapestry` plus the bilingual headers
 #      ("Banned phrases", "do not say", Arabic ban-list markers).
 
-INSTRUCTION_PATTERNS='delve, embark, tapestry|^.*Banned phrases \(English\)|do not say|ممنوعة|لا تخرج'
+INSTRUCTION_PATTERNS='delve, embark, tapestry|^.*Banned phrases \(English\)|do not say|Don.?t say|^\*\*Don.?t|^\*\*Say:|ممنوعة|لا تخرج'
 
 exit_code=0
 total_hits=0
