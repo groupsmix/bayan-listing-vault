@@ -1,0 +1,54 @@
+name: Build Bayan PDFs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'scripts/build-pdf.sh'
+      - 'scripts/pdf-style-*.css'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Install pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+      
+      - name: Install Python and WeasyPrint
+        run: |
+          sudo apt-get install -y python3 python3-pip
+          pip3 install weasyprint
+      
+      - name: Install fonts
+        run: |
+          sudo apt-get install -y fonts-noto-naskh-arabic fonts-noto-sans-arabic fonts-inter
+      
+      - name: Build PDFs
+        run: |
+          chmod +x scripts/build-pdf.sh
+          bash scripts/build-pdf.sh
+      
+      - name: Upload PDF artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: bayan-pdfs
+          path: |
+            dist/bayan-en.pdf
+            dist/bayan-ar.pdf
+          retention-days: 90
+      
+      - name: Commit PDFs to repository
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dist/*.pdf
+          git diff --staged --quiet || git commit -m "ci: rebuild PDFs [skip ci]"
+          git push
