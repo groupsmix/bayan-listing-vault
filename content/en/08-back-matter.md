@@ -10,7 +10,7 @@ What you may **not** do without a separate brokerage / team license:
 - Upload it to a shared brokerage drive accessible to non-licensees
 - Use any portion in a paid course, paid coaching, or training material you sell or charge for
 
-For brokerage / team licensing covering multiple agents under one purchase, contact `{{licensing_email}}`. Pricing is per-seat and includes a brokerage-customised cover.
+For brokerage / team licensing covering multiple agents under one purchase, contact INSERT_FOUNDER_EMAIL. Pricing is per-seat and includes a brokerage-customised cover.
 
 Each PDF copy carries a footer reference (`Watermark: see Gumroad receipt`) and a license-key reference printed on the cover. The license key itself is delivered by Gumroad on the buyer's receipt. The watermark is informational — it identifies the receipt holder for licensing questions; it is not used to police usage. The refund policy below is unconditional within its 14-day window and is not affected by the watermark.
 
@@ -50,9 +50,9 @@ This playbook contains **content templates** — prompts, sequences, sample copy
 
 ## About the author / brand
 
-`{{author_bio_placeholder}}`
+INSERT_FOUNDER_BIO_AND_LICENSE
 
-> *(Author bio is left as a placeholder so the buyer can later update it with the verified bio of the brand owner. Do not invent biographical details.)*
+> *(Author bio and license credentials to be filled by founder before launch.)*
 
 ---
 
@@ -67,11 +67,11 @@ This playbook contains **content templates** — prompts, sequences, sample copy
 
 ## Contact
 
-- **Email:** `{{contact_email}}`
-- **WhatsApp (text only — please):** `{{contact_whatsapp}}`
-- **Brand site:** `{{brand_site}}`
-- **Brokerage / team licensing:** `{{licensing_email}}`
+- **Email:** INSERT_FOUNDER_EMAIL
+- **WhatsApp (text only — please):** INSERT_FOUNDER_WHATSAPP
+- **Brand site:** https://bayan-listing-vault.vercel.app
+- **Brokerage / team licensing:** INSERT_FOUNDER_EMAIL
 
 ---
 
-*Last updated: 2025. Watermark ID: `{{watermark_id}}`.*
+*Last updated: 2025. Watermark ID: see Gumroad receipt.*
