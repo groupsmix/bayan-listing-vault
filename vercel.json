@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "bayan-listing-vault",
+  "builds": [
+    {
+      "src": "landing/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/landing/$1"
+    }
+  ]
+}
