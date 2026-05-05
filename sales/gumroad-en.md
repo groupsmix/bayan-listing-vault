@@ -119,6 +119,6 @@ Bayan has one goal: give you back 6 hours of your Sunday.
 
 Not promising you'll close more deals (though you might). Not promising you'll rank #1 on Bayut (irrelevant). Just promising the next listing you write takes 9 minutes instead of 45, and sounds more like you than anything you've written in the last 3 months.
 
-**[ Get Bayan on Gumroad — AED 297 ]**
+**[ Get Bayan on Gumroad — AED 197 (First 50 Buyers) ]**
 
-14-day refund. 12 months of free updates. One-time payment.
+Regular price AED 497 after first 50 sales. 14-day refund + keep the product. 12 months of free updates. One-time payment.

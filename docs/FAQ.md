@@ -118,13 +118,13 @@ This FAQ is a living document. Update it on Day 12 of the launch (see `docs/LAUN
 
 ### Q: Is this a subscription?
 
-**A:** No. One-time payment. AED 297. You own the PDFs forever. 12 months of free updates included.
+**A:** No. One-time payment. AED 197 for first 50 buyers (regular price AED 497). You own the PDFs forever. 12 months of free updates included.
 
 ---
 
 ### Q: Can I pay in USD or SAR?
 
-**A:** Gumroad supports multi-currency. The price is AED 297 / USD 80 / SAR 290. Your bank will convert at the current exchange rate.
+**A:** Gumroad supports multi-currency. The launch price is AED 197 / USD 54 / SAR 185 for first 50 buyers. Regular price after first 50 sales: AED 497 / USD 135 / SAR 465. Your bank will convert at the current exchange rate.
 
 ---
 

@@ -2,13 +2,18 @@
 
 ## Pricing
 
-| Tier | Price | What's included |
-|---|---|---|
-| **Individual agent (default)** | AED 297 / USD 80 | Bilingual PDF (EN + AR) + 12 months of free updates, 1-seat license |
-| **Team of 3-10 agents** | AED 997 / USD 270 | 10 seats, custom brokerage watermark on PDFs |
-| **Brokerage (unlimited seats)** | AED 4,900 / USD 1,330 | Unlimited seats within one ORN, co-branded cover, 1-hour onboarding call |
+| Tier | Launch Price | Regular Price | What's included |
+|---|---|---|---|
+| **Individual agent (default)** | AED 197 (first 50) | AED 497 / USD 135 | Bilingual PDF (EN + AR) + 12 months of free updates, 1-seat license |
+| **Bayan Pro** | — | AED 997 / USD 270 | Standard + 1-hour onboarding call + custom prompts + 3-month Q&A access |
+| **Team of 3-10 agents** | — | AED 2,997 / USD 815 | Pro tier × 10 seats, custom brokerage watermark on PDFs |
+| **Brokerage (unlimited seats)** | — | AED 9,900 / USD 2,695 | Unlimited seats within one ORN, co-branded cover, quarterly training calls |
 
-**Strategy note:** Individual tier is the wedge. Do not push "team" upsell in the Gumroad flow — it kills conversion on single-agent buyers. Team inquiries come through `teams@` after a single agent converts. Goal: 30 single-seat buyers before first team sale.
+**Launch strategy:** First 50 buyers get AED 197 (60% discount). After 50 sales, price increases to AED 497. This creates urgency and rewards early adopters.
+
+**Upsell strategy:** Bayan Pro is offered on the thank-you page after Standard purchase. Target: 10-15% of Standard buyers upgrade to Pro (additional AED 800 revenue per upgrade).
+
+**Team strategy:** Individual tier is the wedge. Do not push "team" upsell in the Gumroad flow — it kills conversion on single-agent buyers. Team inquiries come through email after a single agent converts. Goal: 30 single-seat buyers before first team sale.
 
 ## Refund policy
 
@@ -73,10 +78,10 @@ Target refund rate: <4% on first 100 sales. Above 6%, audit the PDF for a specif
 **Platform priority:** Meta (Instagram + Facebook) for UAE/KSA agent demographic. LinkedIn as secondary.
 
 **Ad 1 — Hook copy (Meta):**
-> If you're a real-estate agent in Dubai or Riyadh and you write your own listings, captions, and follow-ups — you're losing 6 hours every week to copy. I built a playbook to get that down to 2. 100 prompts, 30 sequences, bilingual, in your voice. AED 297.
+> If you're a real-estate agent in Dubai or Riyadh and you write your own listings, captions, and follow-ups — you're losing 6 hours every week to copy. I built a playbook to get that down to 2. 100 prompts, 30 sequences, bilingual, in your voice. AED 197 for first 50 buyers (regular AED 497).
 
 **Ad 2 — Arabic variant:**
-> إن كنت عقاريًّا في دبي أو الرياض وتكتب قوائمك ومتابعاتك بنفسك — تفقد 6 ساعات أسبوعيًّا على الكتابة. بنيت دليلًا يُنزلها إلى ساعتين. 100 نصّ، 30 تسلسل، ثنائي اللغة، بصوتك. 297 درهم.
+> إن كنت عقاريًّا في دبي أو الرياض وتكتب قوائمك ومتابعاتك بنفسك — تفقد 6 ساعات أسبوعيًّا على الكتابة. بنيت دليلًا يُنزلها إلى ساعتين. 100 نصّ، 30 تسلسل، ثنائي اللغة، بصوتك. 197 درهمًا لأول 50 مشتريًا (السعر العادي 497 درهمًا).
 
 **Landing page URL:** Direct to Gumroad or to the custom landing page — A/B test both. Hypothesis: custom landing page wins by 1.8× on conversion, Gumroad wins on first-time buyer trust. Run both for 14 days before consolidating.
 

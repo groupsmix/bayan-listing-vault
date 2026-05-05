@@ -20,7 +20,7 @@ This is your copy-paste launch script. Every DM, post, email, and caption is wri
 
 **Product name:** Bayan — The Listing Vault
 
-**Price:** AED 297 (or USD 80 / SAR 290)
+**Price:** AED 197 for first 50 buyers (regular price AED 497 after first 50 sales)
 
 **Description:** Copy from `sales/gumroad-en.md` (English) or `sales/gumroad-ar.md` (Arabic)
 
@@ -29,7 +29,7 @@ This is your copy-paste launch script. Every DM, post, email, and caption is wri
 - `dist/bayan-ar.pdf`
 
 **Settings:**
-- Enable "Pay what you want" with minimum AED 297
+- Enable "Pay what you want" with minimum AED 197 (for launch) or AED 497 (after first 50 sales)
 - Enable Gumroad license keys (automatic)
 - Set refund policy to 14 days in product settings
 
