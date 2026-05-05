@@ -35,7 +35,7 @@
 - **Bonus 1: Buyer Onboarding Email Sequence** — 5 emails for the first 14 days of a new buyer relationship. Covers expectations, search criteria, what's normal vs. not, what to look at during viewings, what to verify before signing.
 - **Bonus 2: Seller Onboarding Email Sequence** — 5 emails for a new seller listing. Covers pricing reality, photo-day prep, the 0–14-day listing plan, the weekly update template, and first-offer negotiation strategy.
 
-**All bilingual.** Every section in both English and Gulf-friendly Modern Standard Arabic. Swap language with one tag in the master prompt.
+**All bilingual.** 216 English assets + 50 fully translated Arabic assets + an Arabic voice prompt that regenerates the rest in Gulf-friendly Modern Standard Arabic on demand. Full coverage in both languages.
 
 ---
 
@@ -74,21 +74,23 @@ Testimonials added after pilot wave.
 
 ## Price + math
 
-**Price: AED 297 (~USD 80)**
+**Launch Price: AED 197 for first 50 buyers** (Regular price: AED 497 after launch week)
 
-One saved hour of writing per week at AED 200/hr = **pays for itself in 1.5 days**.
+Why 197? One saved hour of writing per week at AED 200/hr = **pays for itself in 1 week**.
 
-One extra closing every 12 months because a follow-up sequence actually landed = **pays for itself 40× over**.
+One extra closing every 12 months because a follow-up sequence actually landed = **pays for itself 100× over**.
+
+**After the first 50 buyers, price increases to AED 497.** Early buyers lock in AED 197 forever (no recurring fees, ever).
 
 You've already spent more than this on the last subscription tool you don't use.
 
 ---
 
-## 14-day, no-questions-asked refund guarantee
+## 14-day, no-questions-asked refund guarantee (+ keep the product)
 
-Buy Bayan today. Read every prompt. Test the voice-clone master prompt. Copy three listings into Bayut. If any of it feels like it's not worth what you paid — reply to the Gumroad receipt with the word "refund" within 14 days and it's processed within 24 hours. No explanation required. No flagging of your account. No follow-up.
+Buy Bayan today. Read every prompt. Test the voice-clone master prompt. Copy three listings into Bayut. If any of it feels like it's not worth what you paid — reply to the Gumroad receipt with the word "refund" within 14 days and it's processed within 24 hours. **Keep the PDF anyway.** No explanation required. No flagging of your account. No follow-up.
 
-This works because I know it works. If you're the one buyer in 50 for whom it doesn't, I'd rather you leave happy than argue.
+This works because I know it works. If you're the one buyer in 50 for whom it doesn't, I'd rather you have it and leave happy than argue.
 
 ---
 
