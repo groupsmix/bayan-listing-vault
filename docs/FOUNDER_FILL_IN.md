@@ -67,11 +67,35 @@ This document lists every `INSERT_FOUNDER_*` token in the Bayan v1 build. You mu
 
 ## How to fill these in
 
-1. Open each file listed above.
-2. Use your editor's Find & Replace (Ctrl+H / Cmd+H) to replace each `INSERT_FOUNDER_*` token with the actual value.
-3. Commit the changes with the message: `v1: founder fill-in — ready to launch`.
-4. Push to `main`.
-5. The CI pipeline will rebuild the PDFs automatically with your values embedded.
+1. **Create a new branch:**
+   ```bash
+   git checkout -b founder-fill-in
+   ```
+
+2. **Open each file listed above** and use your editor's Find & Replace (Ctrl+H / Cmd+H) to replace each `INSERT_FOUNDER_*` token with the actual value.
+
+3. **Commit the changes:**
+   ```bash
+   git add -A
+   git commit -m "v1: founder fill-in — ready to launch"
+   ```
+
+4. **Push the branch:**
+   ```bash
+   git push origin founder-fill-in
+   ```
+
+5. **Open a Pull Request** on GitHub titled: `v1: founder fill-in — paste values and merge to launch`
+
+6. **Wait for CI to build PDFs** (check the Actions tab — it will build `dist/bayan-en.pdf` and `dist/bayan-ar.pdf`)
+
+7. **Review the PR** — verify no `INSERT_FOUNDER_*` tokens remain
+
+8. **Merge the PR** — once CI is green and PDFs are built
+
+9. **Deploy the landing page** (see `docs/DEPLOY_LANDING.md`)
+
+10. **You can take money.**
 
 ---
 
